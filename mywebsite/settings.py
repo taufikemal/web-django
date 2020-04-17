@@ -119,4 +119,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+#Koneksi ke CSS
 STATIC_URL = '/static/'
+
+#Koneksi ke Media
+MEDIA_URL = '/images/'
+
+#Koneksi ke static
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
