@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-      <img src="{% static 'images/head.png' %}" width="150">
+      <img src="{% static 'images/head1.png' %}" width="160" id="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,8 +13,8 @@
       <div class="navbar-nav">
 
         <!-- List Navbar Menu -->
-        <a class="nav-item nav-link active" href="#">Dashboard</a>
-        <a class="nav-item nav-link" href="#">Products</a>
+        <a class="nav-item nav-link active" href="{% url 'home' %}">Dashboard</a>
+        <a class="nav-item nav-link" href="{% url 'products' %}">Products</a>
 
       </div>
     </div>
